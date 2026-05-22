@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ember",
-  niche: "roofing",
-  name: "Peak Shield Roofing",
-  tagline: "Storm-Ready. Storm-Proof.",
-  phone: "(555) 234-5678",
-  phoneHref: "tel:+15552345678",
-  email: "hello@peakshieldroofing.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Turlock", "Lodi"],
-  license: "CSLB #123987",
-  since: "2005",
-  google_rating: "4.8",
-  review_count: "287",
-  emergency: true,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Dean Roofing Company",
+    tagline: "Roofs Built To Last Generations",
+    phone: "(727) 446-6077",
+    phoneHref: "tel:+17274466077",
+    email: "info@deanroofing.com",
+    address: "123 Main St",
+    city: "St. Petersburg",
+    serviceAreas: ["St. Petersburg", "Clearwater", "Tampa Bay Area", "Largo", "Pinellas Park", "Dunedin"],
+    license: "CCC020246",
+    since: "1946",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: true,
+    theme: "ember",
+    niche: "roofing",
   },
-},
 
   services: [
-  {
-    icon: "home",
-    title: "Roof Replacement",
-    desc: "Full tear-off and replacement with 30-year architectural shingles. Manufacturer warranty + our 10-year workmanship guarantee.",
-    urgent: false,
-  },
-  {
-    icon: "cloud-lightning",
-    title: "Storm Damage Repair",
-    desc: "Wind, hail, and rain damage repaired fast. We document everything for your insurance claim.",
-    urgent: true,
-  },
-  {
-    icon: "file-text",
-    title: "Insurance Claims",
-    desc: "We work directly with your insurance adjuster. 95% of our storm repairs are fully covered.",
-    urgent: false,
-  },
-  {
-    icon: "shield",
-    title: "Emergency Tarping",
-    desc: "Same-day emergency tarp service. 24/7 response. Protect your home while we schedule full repair.",
-    urgent: true,
-  },
-  {
-    icon: "droplets",
-    title: "Gutter Installation",
-    desc: "Seamless aluminum gutters with leaf guards. Protect your foundation and landscaping.",
-    urgent: false,
-  },
-  {
-    icon: "search",
-    title: "Free Inspections",
-    desc: "Thorough roof inspection with photo report. Know exactly what you have before buying or selling.",
-    urgent: false,
-  },
-],
+    { icon: "home", title: "Residential Roofing", desc: "Expert installation and repair for all residential roof types, ensuring lasting protection for your home.", urgent: false },
+    { icon: "briefcase", title: "Commercial Roofing", desc: "Specialized roofing solutions for businesses, designed for durability and minimal disruption to your operations.", urgent: false },
+    { icon: "wrench", title: "Roof Repair", desc: "Prompt and effective repairs for leaks, storm damage, and wear, extending the life of your existing roof.", urgent: true },
+    { icon: "hammer", title: "Roof Replacement", desc: "Complete roof tear-offs and new installations, upgrading your property with modern, high-performance materials.", urgent: false },
+    { icon: "shield-check", title: "Emergency Roofing", desc: "24/7 rapid response for critical roof damage, securing your property against further harm.", urgent: true },
+    { icon: "droplets", title: "Leaky Roof Repair", desc: "Targeted repair of roof leaks, preventing water damage and mold growth in your home or business.", urgent: true }
+  ],
 
   testimonials: [
-  {
-    name: "Robert M.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "Hail storm took out half our roof. Peak Shield had emergency tarps up same day, full replacement done in 3 days. Insurance paid everything.",
-  },
-  {
-    name: "Sarah L.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "They handled the entire insurance claim for us. Didn't pay a dollar out of pocket. New roof looks better than the original.",
-  },
-  {
-    name: "Tom K.",
-    location: "Manteca, CA",
-    stars: 5,
-    text: "Pre-listing inspection found issues the buyer's inspector would've caught. Fixed it fast, sold for full price. Worth every penny.",
-  },
-],
+    { name: "Sarah J.", location: "Clearwater, FL", stars: 5, text: "Dean Roofing replaced our asphalt shingle roof last summer, and the experience was fantastic. From the initial quote to the final inspection, their team was professional and efficient. They finished the job in just three days, and the new roof looks incredible. We've had several heavy rains since, and not a single leak!" },
+    { name: "Mark T.", location: "St. Petersburg, FL", stars: 5, text: "When a tree fell on our roof during a storm, Dean Roofing was there within hours. Their emergency service was a lifesaver. They quickly tarped the damaged area and returned a week later for a full repair. The crew was courteous, and the quality of work was exceptional. Highly recommend their prompt and reliable service." },
+    { name: "Emily R.", location: "Dunedin, FL", stars: 5, text: "We chose Dean Roofing for our commercial building's flat roof replacement, and they exceeded our expectations. Their project manager kept us informed every step of the way, and they completed the work on schedule and within budget. The new roof is performing perfectly, and we appreciate their attention to detail and professionalism." }
+  ],
 
   trustBadges: [
-  "Licensed & Insured",
-  "Storm Damage Specialists",
-  "Insurance Claim Experts",
-  "GAF Master Elite Contractor",
-  "Lifetime Warranty Available",
-  "Free Inspections",
-],
+    "Owens Corning Platinum Contractor", "State Licensed CCC020246", "A+ BBB Rating", "77+ Years Experience", "Licensed, Bonded & Insured", "Same Location Since 1946"
+  ],
 
   stats: [
-  {
-    "value": 4.8,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1435,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 21,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 77, label: "Yrs Experience", suffix: "+", decimals: 0 },
+    { value: 10000, label: "Roofs Installed", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI answers every call and text 24/7 — schedules inspections, captures storm-damage leads, and gives estimates before competitors do."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Response", desc: "We prioritize urgent requests, providing quick assessments and solutions to protect your property." },
+    { icon: "dollar-sign", title: "Upfront Pricing", desc: "Receive clear, detailed estimates with no hidden fees, ensuring transparency from start to finish." },
+    { icon: "award", title: "Certified Pros", desc: "Our team consists of highly trained and certified roofing specialists dedicated to quality craftsmanship." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We stand behind our work with a commitment to your complete satisfaction on every project." },
+    { icon: "phone", title: "24/7 Support", desc: "Our team is available around the clock for emergency services and to answer your roofing questions." },
+    { icon: "truck", title: "Fully Equipped", desc: "Our crews arrive with all necessary tools and materials to complete your roofing project efficiently." }
+  ],
 
-  formServiceOptions: [
-  "Roof Replacement",
-  "Storm Damage Repair",
-  "Insurance Claims",
-  "Emergency Tarping",
-  "Gutter Installation",
-  "Free Inspections"
-],
+  formServiceOptions: ["Residential Roofing", "Commercial Roofing", "Roof Repair", "Roof Replacement", "Emergency Roofing", "Leaky Roof Repair"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
